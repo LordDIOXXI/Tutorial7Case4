@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 7
+   Case Problem 4
+
+   MC Form Styles
+   Author: Jacob West
+   Date:   02/23/20
+
+   Filename: mc_forms.css
+
+*/
+fieldset{
+    border: 5px inset;
+}
+
+legend {
+    font-size: 1.5em;
+    
+}
+
+label {
+   display: block;
+   float: left;
+   clear: left;
+   font-size: 0.9em;
+   margin-bottom: 10px;
+   margin-right: 10px;
+   width: 180px;
+   text-align: right;
+}
+
+form input, form select {
+   display: block;
+   float: left;
+}
+
+select {
+    width: 100px;
+}
+
+/* Radio Button Styles */
+
+input[type='radio'] {
+   width: auto;
+   float: left;
+   clear: none;
+   margin-right: 15px;
+}
+
+div.yesno input{
+    display: inline;
+}
+
+
+/* Submit Button Styles */
+
+button.button {
+    display: inline;
+    float: none;
+    margin: 5px auto;
+}
+
+input:not([type= ' radio ' ]):focus {
+    background-color: rgb(255,218,165);
+}
+
+input:not([type= ' radio ' ]):focus:valid {
+    background: rgb(215, 255, 215) url(mc_go.png) bottom right/contain no-repeat;
+}
+
+input:not([type= ' radio ' ]):focus:invalid {
+    background: rgb(215, 245, 215) url(mc_stop.png) bottom right/contain no-repeat;
+}

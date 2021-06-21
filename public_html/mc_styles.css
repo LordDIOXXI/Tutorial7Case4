@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 7
+   Case Problem 4
+
+   MC Styles
+   Author: Jacob West
+   Date:   02/23/20
+
+   Filename: wm_styles.css
+
+*/
+
+html {
+    height: 100%;
+}
+
+/* Header styles */
+
+header {
+    width: 100%;
+    background: url(mc_logo.png);
+}
+
+header img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Body Styles */
+h1 {
+    color: yellow;
+}
+
+body {
+    background-color: lightblue;
+}
